@@ -76,4 +76,20 @@ return {
 //   }
 // }
 // }
+
+
+//// this code is for fetching data with getServerSideProps without using getStaticProps
+
+// export const getServerSideProps = async (context) =>{
+//   const response = await fetch(`https://jsonplaceholder.typicode.com/posts/${context.params.id}`)
+//   const article = await response.json()
+//   return {
+//     props:{
+//       article
+//     }
+//   }
+//   }
+
+// getServerSideProps fetched data on each request on server 
+
 export default article
